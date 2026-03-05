@@ -2,62 +2,91 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Fimoz XC</title>
+<title>Agent Registration</title>
 
 <style>
+
 body{
-font-family: Arial;
-background:#0f172a;
+margin:0;
+font-family:Arial, sans-serif;
+background:#0f1923;
+color:white;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
-margin:0;
 }
 
 .box{
-background:white;
+background:#1f2731;
 padding:40px;
-border-radius:10px;
-width:300px;
+border-radius:8px;
+width:320px;
 text-align:center;
+box-shadow:0 0 25px rgba(0,0,0,0.6);
+border:2px solid #ff4655;
+}
+
+h1{
+margin-bottom:25px;
+letter-spacing:2px;
+color:#ff4655;
 }
 
 input{
 width:100%;
-padding:10px;
+padding:12px;
 margin:10px 0;
-border-radius:5px;
-border:1px solid #ccc;
+border:none;
+border-radius:4px;
+background:#0f1923;
+color:white;
+border:1px solid #333;
+}
+
+input:focus{
+outline:none;
+border:1px solid #ff4655;
 }
 
 button{
 width:100%;
-padding:10px;
-background:#2563eb;
-color:white;
+padding:12px;
+margin-top:15px;
 border:none;
-border-radius:5px;
+border-radius:4px;
+background:#ff4655;
+color:white;
+font-weight:bold;
 cursor:pointer;
+transition:0.2s;
 }
 
 button:hover{
-background:#1d4ed8;
+background:#ff2a3d;
 }
-</style>
 
+.subtitle{
+font-size:13px;
+color:#aaa;
+margin-bottom:20px;
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="box">
 
-<h2>Регистрация</h2>
+<h1>AGENT ACCESS</h1>
+<div class="subtitle">Secure Valorant System</div>
 
 <form>
-<input type="text" placeholder="Логин">
-<input type="password" placeholder="Пароль">
-<button>Создать аккаунт</button>
+<input type="text" placeholder="Nickname">
+<input type="email" placeholder="Email">
+<input type="text" placeholder="Agent Name">
+<button type="submit">ENTER</button>
 </form>
 
 </div>
